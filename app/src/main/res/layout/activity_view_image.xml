@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".display.ViewImageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backbtnimageview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/imageviewbackbtn"
+                android:background="@android:color/transparent"
+                android:tint="@color/white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text = "Kullanıcı Fotoğrafı"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"/>
+
+            <ImageButton
+                android:id="@+id/editbtnimageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profileditib"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:tint="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/sharebtnimageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imageviewsharebtn"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:tint="@color/white"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:id="@+id/imageView"
+        android:transitionName="image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_baseline_self_improvement_24"
+        android:scaleType="fitCenter"/>
+</LinearLayout>
+</layout>

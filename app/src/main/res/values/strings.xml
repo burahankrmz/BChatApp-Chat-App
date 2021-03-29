@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BChatApp</string>
+    <string name="didn_t_get_otp_resend">Didn\'t get OTP? <b>Resend</b></string>
+    <string name="welcome">Hoşgeldiniz</string>
+    <string name="chats">Sohbetler</string>
+    <string name="calls">Aramalar</string>
+    <string name="status">Durum</string>
+    <string name="accept">Kurallarımızı,gizlilik sözleşemlerimizi okuduysanız aşşağıdaki butona tıklayın.</string>
+</resources>
